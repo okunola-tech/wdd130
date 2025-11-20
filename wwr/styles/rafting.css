@@ -1,0 +1,174 @@
+/* ============================
+   RESET + VARIABLES
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0a4d6c;
+  --secondary-color: #ffffff;
+  --dark-text: #333;
+  --light-bg: #fdfdfd;
+  --heading-font: Arial, Helvetica, sans-serif;
+  --body-font: Georgia, serif;
+}
+
+/* ============================
+   GLOBAL STYLES
+============================ */
+body {
+  font-family: var(--body-font);
+  color: var(--dark-text);
+  background-color: var(--light-bg);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ============================
+   HEADER
+============================ */
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.header-logo {
+  width: 90px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+/* NAVIGATION */
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  opacity: 0.75;
+}
+
+/* ============================
+   HERO SECTION
+============================ */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-color: rgba(10, 77, 108, 0.75);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hero article img {
+  float: right;
+  width: 45%;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+
+/* ============================
+   HISTORY SECTION
+============================ */
+.history {
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ============================
+   ADVENTURES GRID
+============================ */
+.adventures {
+  padding: 40px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.adventure-grid figure {
+  text-align: center;
+}
+
+.adventure-grid figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
+.socialmedia a img {
+  width: 35px;
+  height: auto;
+}
