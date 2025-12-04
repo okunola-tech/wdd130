@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Trips — White Water Rafting Adventures. View detailed trip descriptions, photos, and a complete trip table with duration, difficulty and pricing.">
+  <meta name="author" content="Nurudeen Okunola">
+  <title>Trips | White Water Rafting Adventures</title>
+
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="header-logo">
+    <h2 class="logo-text">White Water Rafting Adventures</h2>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html" class="active">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-wrapper">
+      <h1>Trips</h1>
+      <p>Choose the right river run for your group — from easy family floats to expert-class rapids.</p>
+
+      <!-- CTA to contact -->
+      <p><a href="contact.html" class="submit-btn" style="display:inline-block;text-decoration:none;">Contact Us for Reservations &rarr;</a></p>
+    </section>
+
+    <!-- TRIP DETAILS: at least three detailed descriptions with photos -->
+    <section class="section-wrapper" aria-labelledby="trips-list">
+      <h2 id="trips-list">Featured Trips</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;">
+        <!-- Trip 1 -->
+        <article>
+          <img src="images/diablo.jpg" alt="Diablo run" style="width:100%;border-radius:8px;">
+          <h3>Diablo Canyon — Intermediate</h3>
+          <p><strong>Duration:</strong> Full day (6–8 hours) • <strong>Difficulty:</strong> Class III-IV</p>
+          <p>Our Diablo Canyon run offers sustained rapids mixed with scenic stretches. Perfect for paddlers who want adrenaline with excellent photo opportunities.</p>
+          <p><a href="contact.html">Reserve this trip &rarr;</a></p>
+        </article>
+
+        <!-- Trip 2 -->
+        <article>
+          <img src="images/waterfall.jpg" alt="Waterfall run" style="width:100%;border-radius:8px;">
+          <h3>Waterfall Run — Advanced</h3>
+          <p><strong>Duration:</strong> Full day (6–8 hours) • <strong>Difficulty:</strong> Class IV-V</p>
+          <p>A challenging run for experienced paddlers. Expect big waves, technical lines, and expert ride guides. Not recommended for first-time rafters.</p>
+          <p><a href="contact.html">Reserve this trip &rarr;</a></p>
+        </article>
+
+        <!-- Trip 3 -->
+        <article>
+          <img src="images/halfdays.jpg" alt="Half Day Adventure" style="width:100%;border-radius:8px;">
+          <h3>Half-Day Explorer — Beginner Friendly</h3>
+          <p><strong>Duration:</strong> 3–4 hours • <strong>Difficulty:</strong> Class I-II</p>
+          <p>Great for families and those wanting a shorter introduction to rafting. Scenic shoreline stops and gentle rapids make this a crowd favorite.</p>
+          <p><a href="contact.html">Reserve this trip &rarr;</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TRIP TABLE -->
+    <section class="section-wrapper" aria-labelledby="trip-table">
+      <h2 id="trip-table">Trips Overview</h2>
+
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr style="background:#f0f5f7;">
+            <th style="padding:10px;border:1px solid #ddd;text-align:left;">Trip</th>
+            <th style="padding:10px;border:1px solid #ddd;text-align:left;">Duration</th>
+            <th style="padding:10px;border:1px solid #ddd;text-align:left;">Difficulty</th>
+            <th style="padding:10px;border:1px solid #ddd;text-align:left;">Price (per person)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px;border:1px solid #ddd;">Diablo Canyon</td>
+            <td style="padding:10px;border:1px solid #ddd;">Full day (6–8 hrs)</td>
+            <td style="padding:10px;border:1px solid #ddd;">Class III-IV</td>
+            <td style="padding:10px;border:1px solid #ddd;">$125</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border:1px solid #ddd;">Waterfall Run</td>
+            <td style="padding:10px;border:1px solid #ddd;">Full day (6–8 hrs)</td>
+            <td style="padding:10px;border:1px solid #ddd;">Class IV-V</td>
+            <td style="padding:10px;border:1px solid #ddd;">$165</td>
+          </tr>
+          <tr>
+            <td style="padding:10px;border:1px solid #ddd;">Half-Day Explorer</td>
+            <td style="padding:10px;border:1px solid #ddd;">3–4 hrs</td>
+            <td style="padding:10px;border:1px solid #ddd;">Class I-II</td>
+            <td style="padding:10px;border:1px solid #ddd;">$75</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 White Water Rafting Adventures | Nurudeen Okunola</p>
+
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram icon"></a>
+    </nav>
+  </footer>
+
+</body>
+</html>
