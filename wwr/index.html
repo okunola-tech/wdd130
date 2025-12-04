@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | White Water Rafting</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="White Water Rafting Adventures — thrilling guided rafting trips, safety-first guides, and unforgettable river experiences.">
+  <meta name="author" content="Nurudeen Okunola">
+  <title>Home | White Water Rafting Adventures</title>
 
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
 <body>
 
-  <header>
-    <h1>White Water Rafting</h1>
-    <nav>
-      <a href="index.html">Home</a>
+  <!-- HEADER (same as About & Contact) -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="header-logo">
+    <h2 class="logo-text">White Water Rafting Adventures</h2>
+
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- HERO SECTION -->
+    <!-- HERO: full-width image with absolute heading -->
     <div class="hero">
-      <img src="images/hero_transparency_1024.png" alt="Rafting adventure in canyon">
-
-      <h2>Experience the Thrill of the Rapids</h2>
-
-      <article>
-        <img src="images/rafting4_600.jpg" alt="Rafting group">
-        <p>
-          Welcome to White Water Rafting! We provide safe, exciting rafting trips for families,
-          beginners, and seasoned adventurers. Explore our guided river tours and find your next
-          unforgettable experience.
-        </p>
-      </article>
+      <img src="images/hero.jpg" alt="Rafting adventure through canyon">
+      <h1>Experience the River — Adventure Awaits</h1>
+      <!-- simple text overlay beneath hero (optional) -->
     </div>
 
-    <!-- HOME CONTENT -->
-    <section>
-      <h2>Why Raft With Us?</h2>
-      <p>
-        We offer top-quality equipment, certified guides, and breathtaking routes through stunning
-        landscapes. Whether you're seeking adrenaline or a relaxing scenic float, we have the perfect
-        trip for you.
-      </p>
+    <!-- CALL TO ACTION / NEWSLETTER -->
+    <section class="section-wrapper" aria-labelledby="join-heading">
+      <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;">
+        <div style="flex:1;min-width:280px;">
+          <h2 id="join-heading">Join Our Next Adventure</h2>
+          <p>Sign up for updates, trip openings, and special offers. Don’t miss out — space fills fast!</p>
+          <p><a href="trips.html" style="font-weight:bold;text-decoration:underline;">See our Trips &rarr;</a></p>
+        </div>
+
+        <form action="contact.html" method="post" style="flex:1;min-width:280px;max-width:480px;background:#f7fbfd;padding:16px;border-radius:8px;">
+          <h3 style="margin-bottom:8px;">Newsletter Signup</h3>
+
+          <label for="nl-name" style="display:block;font-weight:bold;margin-bottom:6px;">Name</label>
+          <input id="nl-name" name="name" type="text" required style="width:100%;padding:8px;margin-bottom:8px;border-radius:6px;border:1px solid #ccc;">
+
+          <label for="nl-email" style="display:block;font-weight:bold;margin-bottom:6px;">Email</label>
+          <input id="nl-email" name="email" type="email" required style="width:100%;padding:8px;margin-bottom:10px;border-radius:6px;border:1px solid #ccc;">
+
+          <button type="submit" class="submit-btn" style="width:100%;">Subscribe</button>
+        </form>
+      </div>
     </section>
 
-    <section class="cards">
-      <div class="card">
-        <img src="images/rafting1.jpg" alt="Rafting boat in rapids">
-        <h3>Beginner Trips</h3>
-        <p>Safe and fun for all ages. Enjoy gentle rapids and great scenery.</p>
-      </div>
+    <!-- GRID CONTENT: use CSS Grid (not single column) -->
+    <section class="section-wrapper" aria-labelledby="about-grid">
+      <h2 id="about-grid">What We Offer</h2>
 
-      <div class="card">
-        <img src="images/rafting2.jpg" alt="Group in heavy rapids">
-        <h3>Adventure Trips</h3>
-        <p>Strong rapids for experienced rafters seeking a challenge.</p>
-      </div>
+      <div class="adventure-grid" style="align-items:start;">
+        <figure>
+          <img src="images/diablo.jpg" alt="Los Dientes del Diablo">
+          <figcaption><strong>All-Levels Trips</strong><br>Family-friendly options and scenic floats for all ages.</figcaption>
+        </figure>
 
-      <div class="card">
-        <img src="images/rafting3.jpg" alt="Relaxed scenic float">
-        <h3>Scenic Floats</h3>
-        <p>A peaceful relaxing float perfect for families and photographers.</p>
+        <figure>
+          <img src="images/rapid.jpg" alt="Class IV Rapids">
+          <figcaption><strong>White-Knuckle Rapids</strong><br>Challenging Class IV runs guided by our experienced crews.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/halfdays.jpg" alt="Half Day Adventure">
+          <figcaption><strong>Half-Day & Full-Day Options</strong><br>Flexible trip lengths so you can choose the perfect adventure.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FEATURE SPREAD: two-column area that uses grid/flex -->
+    <section class="section-wrapper" aria-labelledby="why-heading" style="padding-top:8px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;">
+        <div>
+          <h2 id="why-heading">Why Choose Us</h2>
+          <p>Safety-first training, certified guides, top quality gear, and a love for the river. We ensure unforgettable trips while keeping safety a top priority.</p>
+          <ul>
+            <li>Certified, experienced guides</li>
+            <li>Small group sizes</li>
+            <li>Customizable trips & team building events</li>
+          </ul>
+          <p><a href="contact.html" class="submit-btn" style="display:inline-block;text-decoration:none;padding:10px 16px;">Contact Us to Book</a></p>
+        </div>
+
+        <div>
+          <img src="images/rafting4_600.jpg" alt="Rafting team in boat" style="width:100%;border-radius:8px;">
+        </div>
       </div>
     </section>
 
   </main>
 
- <footer>
-  <p>&copy; 2025 White Water Rafting | Nurudeen Okunola</p>
+  <!-- FOOTER (same as other pages) -->
+  <footer>
+    <p>&copy; 2025 White Water Rafting Adventures | Nurudeen Okunola</p>
 
-  <nav class="socialmedia">
-    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-  </nav>
-</footer>
-
-
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram icon"></a>
+    </nav>
+  </footer>
 </body>
 </html>
