@@ -1,39 +1,185 @@
-/* ============================
-   CONTACT PAGE STYLES
-============================ */
-
-/* Contact Page headings spacing */
-main h1 {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
+/* ============================================
+   ROOT VARIABLES (COLORS, FONTS)
+============================================ */
+:root {
+  --primary-color: #0a4d68;
+  --secondary-color: #1b7da6;
+  --light-gray: #f0f5f7;
+  --dark-gray: #333;
+  --body-font: "Arial", sans-serif;
 }
 
-/* Company Info Section */
-.contact-info {
-  max-width: 900px;
-  margin: 0 auto 40px auto;
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: #ffffff;
+}
+
+/* ============================================
+   GLOBAL LAYOUT
+============================================ */
+
+/* Centers each main section on the page */
+.section-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-.contact-info h2,
-.employees h2,
-.contact-form h2 {
+/* All H2 headings spacing */
+h2 {
   margin-bottom: 15px;
+}
+
+/* ============================================
+   HEADER
+============================================ */
+.site-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo {
+  width: 80px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+}
+
+/* ============================================
+   FOOTER
+============================================ */
+footer {
+  margin-top: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.socialmedia img {
+  width: 35px;
+  margin: 5px;
+}
+
+/* ============================================
+   HERO SECTION (ABOUT PAGE)
+============================================ */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px black;
+}
+
+.hero article {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.hero article img {
+  width: 200px;
+  border-radius: 6px;
+}
+
+/* ============================================
+   HISTORY SECTION
+============================================ */
+.history {
+  padding: 20px;
+}
+
+/* ============================================
+   ADVENTURES GRID
+============================================ */
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.adventure-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ============================================
+   CONTACT PAGE (YOUR ORIGINAL CODE IMPROVED)
+============================================ */
+
+/* Page Title */
+main h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* CONTACT INFO SECTION */
+.contact-info {
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
 }
 
 /* Map iframe */
 .map-container iframe {
   width: 100%;
   height: 350px;
-  border: 0; /* Assignment requires removing inline border */
+  border: 0;
   border-radius: 8px;
   margin-top: 10px;
 }
 
-/* ============================
-   EMPLOYEE GRID
-============================ */
+/* EMPLOYEE GRID */
 .employees {
   max-width: 1100px;
   margin: 0 auto 40px auto;
@@ -58,9 +204,7 @@ main h1 {
   font-weight: bold;
 }
 
-/* ============================
-   CONTACT FORM
-============================ */
+/* CONTACT FORM */
 .contact-form {
   max-width: 800px;
   margin: 0 auto 60px auto;
