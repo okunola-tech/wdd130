@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Contact White Water Rafting Adventures — ask questions, send feedback, or inquire about reservations.">
-  <meta name="author" content="Nurudeen Okunola">
-
   <title>Contact Us | White Water Rafting Adventures</title>
-
+  <meta name="description" content="Get in touch with White Water Rafting Adventures for questions, bookings, and support.">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-  <!-- SAME HEADER AS ABOUT.HTML -->
+  <!-- HEADER -->
   <header class="site-header">
-    <img src="images/logo.png" alt="White Water Rafting Logo" class="header-logo">
-
+    <img src="images/logo.png" alt="Company Logo" class="header-logo">
     <h2 class="logo-text">White Water Rafting Adventures</h2>
 
     <nav class="main-nav">
@@ -32,109 +27,93 @@
 
     <h1>Contact Us</h1>
 
-    <!-- COMPANY INFORMATION -->
-    <section class="contact-info section-wrapper">
-      <h2>Company Information</h2>
+    <!-- TWO-COLUMN LAYOUT REQUIRED BY WIREFRAME -->
+    <section class="contact-wrapper">
 
-      <p><strong>Address:</strong> 123 River Rapids Rd, Jackson, WY 83001</p>
-      <p><strong>Phone:</strong> (555) 555-1212</p>
-      <p><strong>Email:</strong> info@wwr.com</p>
+      <!-- LEFT COLUMN -->
+      <div class="contact-left">
+        <h2>Company Information</h2>
 
-      <h3>Find Us</h3>
+        <p><strong>Address:</strong> 123 River Rapids Rd, Jackson, WY 83001</p>
+        <p><strong>Phone:</strong> (555) 555-1212</p>
+        <p><strong>Email:</strong> info@wwr.com</p>
 
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.034323671679!2d-111.04554768472766!3d36.05444597990396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87346512345abcd%3A0x9876543210fedcba!2sGrand%20Canyon!5e0!3m2!1sen!2sus!4v9999999999999"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <h3>Find Us</h3>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18..." 
+            loading="lazy">
+          </iframe>
+        </div>
       </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="contact-right">
+        <h2>Send Us a Message</h2>
+
+        <form method="post" action="contact.html">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <fieldset>
+            <legend>Purpose of Your Message</legend>
+
+            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+          </fieldset>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <label class="checkbox-row">
+            <input type="checkbox" name="newsletter">
+            Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
     </section>
 
     <!-- EMPLOYEES -->
-    <section class="employees section-wrapper">
+    <section class="employees">
       <h2>Meet Our Team</h2>
 
       <div class="employee-grid">
         <figure>
-          <img src="images/employee1.jpeg" alt="John - Lead Guide">
+          <img src="images/employee1.jpeg" alt="Lead Guide">
           <figcaption>John Smith — Lead Guide</figcaption>
         </figure>
 
         <figure>
-          <img src="images/employee2.jpg" alt="Sarah - Operations Manager">
+          <img src="images/employee2.jpg" alt="Operations Manager">
           <figcaption>Sarah Lopez — Operations Manager</figcaption>
         </figure>
 
         <figure>
-          <img src="images/employee3.jpeg" alt="Mike - Safety Director">
+          <img src="images/employee3.jpeg" alt="Safety Director">
           <figcaption>Mike Thompson — Safety Director</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- CONTACT FORM -->
-    <section class="contact-form section-wrapper">
-      <h2>Send Us a Message</h2>
-
-      <form action="contact.html" method="post">
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
-        <fieldset>
-          <legend>Purpose of Your Message</legend>
-
-          <label>
-            <input type="radio" name="purpose" value="general" required>
-            General Inquiry
-          </label>
-
-          <label>
-            <input type="radio" name="purpose" value="reservation">
-            Reservation Question
-          </label>
-
-          <label>
-            <input type="radio" name="purpose" value="suggestion">
-            Website Suggestion
-          </label>
-        </fieldset>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-
-        <label class="checkbox-row">
-          <input type="checkbox" name="subscribe">
-          Please subscribe me to the monthly newsletter
-        </label>
-
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </section>
-
   </main>
 
-  <!-- SAME FOOTER AS ABOUT.HTML -->
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 White Water Rafting Adventures | Nurudeen Okunola</p>
 
     <nav class="socialmedia">
-      <a href="https://facebook.com">
-        <img src="images/facebook.png" alt="Facebook icon">
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/twitter.png" alt="Twitter icon">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.png" alt="Instagram icon">
-      </a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
     </nav>
   </footer>
 
 </body>
 </html>
-
